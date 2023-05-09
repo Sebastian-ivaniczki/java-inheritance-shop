@@ -1,4 +1,4 @@
-package java.shop.org;
+package jana.shoop;
 
 public class Cuffie extends Prodotto{
 	private String color;
@@ -27,7 +27,7 @@ public class Cuffie extends Prodotto{
 	public String toString() {
 		//
 		return super.getText() + 
-				"/ncolore cuffie: " + color + "wirles: " + isWirles;
+				"/ncolore cuffie: " + color + " " + "wirles: " + isWirles;
 	}
 
 }

@@ -1,4 +1,4 @@
-package java.shop.org;
+package jana.shoop;
 
 import java.util.Random;
 
@@ -14,6 +14,8 @@ public class Prodotto {
 		setDescription(description);
 		setPrice(price);
 		setIva(iva);
+		code = getCode();
+		
 	}
 	
 	// Getter and Setter 
@@ -21,7 +23,7 @@ public class Prodotto {
 	public String getCode() {
 		Random rn = new Random();
 		
-		int randNum = rn.nextInt(101);
+		int randNum = rn.nextInt(1001);
 		
 		code = ""+ randNum;
 		
@@ -75,7 +77,7 @@ public class Prodotto {
 	
 	public String getText() {
 		return "Codice prodotto: " + code + " nome prodotto: " + name + 
-				"/ndescrizione prodotto: " + description + 
+				"/ndescrizione prodotto: " + description + " " +
 				"/nprezzo prodotto " + price + "prezzo con iva: " + getIvaPrice();
 	}
 	

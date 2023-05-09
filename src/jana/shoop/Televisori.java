@@ -1,4 +1,4 @@
-package java.shop.org;
+package jana.shoop;
 
 public class Televisori extends Prodotto {
 	private int dimension;
@@ -26,6 +26,6 @@ public class Televisori extends Prodotto {
 	public String toString() {
 		//
 		return super.getText() + 
-				"/ndemensioni Tv: " + dimension + "Smart: " + isSmart;
+				"/ndemensioni Tv: " + dimension + " " + "Smart: " + isSmart;
 	}
 }
